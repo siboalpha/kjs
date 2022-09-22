@@ -1,0 +1,118 @@
+@media screen and (max-width: 540px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero .container {
+    padding: 30vh 20px;
+  }
+  .hero .container .intro {
+    max-width: 100%;
+  }
+  .hero .container .tours-cards {
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    margin: 50px 0 0 0;
+  }
+  .hero .container .tours-cards .tour-card {
+    padding: 30px 0;
+  }
+  .hero .container .tours-cards p {
+    font-size: 14px;
+  }
+  .about .container {
+    padding: 20px 10px;
+    flex-direction: column-reverse;
+  }
+  .about .container .col-right {
+    width: 100%;
+    text-align: center;
+  }
+  .about .container .col-right img {
+    width: 70%;
+  }
+  .about .container .col-left {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .tours .container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tours .container .top-center-text h1 {
+    font-size: 22px;
+  }
+  .tours .container .tours-grids .tour-grid {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    margin: 20px 0;
+  }
+  .tours .container .tours-grids .tour-grid .col-left {
+    width: 100%;
+    text-align: center;
+  }
+  .tours .container .tours-grids .tour-grid .col-left img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+  .tours .container .tours-grids .tour-grid .col-right {
+    width: 100%;
+  }
+  .tours .container .tours-grids .tour-grid .col-right .heading {
+    font-size: 22px;
+  }
+  .tours .container .tours-grids .tour-grid .col-right .price p {
+    font-size: 16px;
+  }
+  .call-to-action .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .contact .container {
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 20;
+    padding-right: 20;
+    max-width: 100%;
+  }
+  .contact .container .col-left {
+    width: 100%;
+  }
+  .contact .container .col-right {
+    width: 100%;
+  }
+  .contact .container .col-right form .form-input .submit-btn {
+    width: 50%;
+  }
+  .contact .container .col-right form .half {
+    grid-template-columns: 100%;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}/*# sourceMappingURL=mobile.css.map */

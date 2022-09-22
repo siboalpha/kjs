@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>see and feel a real, local Kigali</title>
+    <meta name="title" content="see and feel a real, local Kigali" />
+    <meta
+      name="description"
+      content="KJS EXPERIENCES is a young tourist oriented agency whose objective is to offer to the curious individuals or groups a possibility to see and feel a real, local Kigali."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kjsexperience.com/" />
+    <meta property="og:title" content="see and feel a real, local Kigali" />
+    <meta
+      property="og:description"
+      content="KJS EXPERIENCES is a young tourist oriented agency whose objective is to offer to the curious individuals or groups a possibility to see and feel a real, local Kigali."
+    />
+    <meta
+      property="og:image"
+      content="{% static 'img/affordable websites.png' %}"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kjsexperience.com/" />
+    <meta
+      property="twitter:title"
+      content="see and feel a real, local Kigali"
+    />
+    <meta
+      property="twitter:description"
+      content="KJS EXPERIENCES is a young tourist oriented agency whose objective is to offer to the curious individuals or groups a possibility to see and feel a real, local Kigali."
+    />
+    <meta
+      property="twitter:image"
+      content="{% static 'img/affordable websites.png' %}"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="{% static 'css/natigation.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/54c10e37be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  </head>
+
+  <body>
+    <section class="navigation" id="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a class="site-logo" href="/"><img src="{% static '/img/kjs-experience logo.png' %}" alt="" /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="/">Welcome</a></li>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#tours">Tours</a></li>
+            <li><a href="/#get-in-touch">Get in touch</a></li>
+            <li>
+              <a class="get-in-touch" href="/#get-in-touch"
+                ><button class="contact-btn">Book a tour</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <div class="intro">
+                <h1 class="heading">see and feel a real, local Kigali</h1>
+                <p>
+                    KJS EXPERIENCES is a young tourist oriented agency whose objective is 
+                    to offer to the curious individuals or groups a possibility to 
+                    see and feel a real, local Kigali.
+                </p>
+            </div>
+            <div class="tours-cards">
+                <a href="/#walking"><div class="tour-card"><p>Walking tours</p></div></a>
+                <a href="/#biking"><div class="tour-card"><p>Biking tours</p></div></a>
+                <a href="/#farming"><div class="tour-card"><p>Farming experiences</p></div></a>
+                <a href="/#kigali"><div class="tour-card"><p>Kigali tours</p></div></a>
+                <a href="/#night"><div class="tour-card"><p>Night Experience</p></div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="col-left">
+                <h4 class="sub-heading">About Us</h4>
+                <h1 class="heading">We have a dream to make Rwanda a better place.</h1>
+                <p class="about-text">
+                    KJS is owned and managed by four professional tour guides. 
+                    Their idea was to allow tourists to experience local life, 
+                    meet local people and get to learn about the culture.
+
+                    With our programs we support the local community that participates 
+                    in our activities, as well as provide jobs for the young 
+                    people in our community.
+                </p>
+                <a href="">
+                    <button class="btn cta">
+                        Book a tour with us
+                    </button>
+                </a>
+            </div>
+            <div class="col-right">
+                <img src="{% static '/img/kjs experience team.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="tours" id="tours">
+        <div class="container">
+            <div class="top-center-text">
+                <h4 class="sub-heading">Our Tours</h4>
+                <h1 class="heading">Do you want to hear about the history of Nyamirambo( which means cemetery), the most vibrant place of kigali?</h1>
+            </div>
+            <div class="tours-grids">
+                <div class="tour-grid" id="farming">
+                    <div class="col-left">
+                        <img src="{% static '/img/kjs experiences farming.jpg' %}" alt="">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="heading">Farming Experience</h3>
+                        <div class="price"><p>$30</p></div>
+                        <p class="tour-desc">
+                            Special cultural experience where your guide takes you to 
+                            the local farmer who will show you the farmig process, 
+                            tell you everything you want to know about the local 
+                            crops and how they are harvested tradationally.
+                        </p>
+                        <a href="/#get-in-touch">
+                            <button class="btn cta">Book a tour with us</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-grid reverse" id="biking">
+                    <div class="col-left">
+                        <img src="{% static '/img/kjs experiences biking.jpg' %}" alt="">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="heading">Biking Tour</h3>
+                        <div class="price"><p>$30</p></div>
+                        <p class="tour-desc">
+                            A four hours long tour that gives you a good insight to the life of Kigali and teaches you a lot about the local culture and the everyday life in the town.
+                        </p>
+                        <a href="/#get-in-touch">
+                            <button class="btn cta">Book a tour with us</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-grid" id="hiking">
+                    <div class="col-left">
+                        <img src="{% static '/img/kjs experience hiking.jpg' %}" alt="">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="heading">Hiking Tour</h3>
+                        <div class="price"><p>$30</p></div>
+                        <p class="tour-desc">
+                            A beautiful hike to mountain Kigali or Rebero mountain where you will enjoy the panoramic views of Kigali from the top.
+                        </p>
+                        <a href="/#get-in-touch">
+                            <button class="btn cta">Book a tour with us</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-grid reverse" id="walking">
+                    <div class="col-left">
+                        <img src="{% static '/img/kjs experince walking.png' %}" alt="">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="heading">Walking tour</h3>
+                        <div class="price"><p>$30</p></div>
+                        <p class="tour-desc">
+                            A three hours long walking tour that introduces you to different local businesses, mosques, churches, stadiums, etc. and tells you their (hi)stories.
+                        </p>
+                        <a href="/#get-in-touch">
+                            <button class="btn cta">Book a tour with us</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tour-grid" id="kigali">
+                    <div class="col-left">
+                        <img src="{% static '/img/kjs experience kigali city.png' %}" alt="">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="heading">Night Experience</h3>
+                        <div class="price"><p>$30</p></div>
+                        <p class="tour-desc">
+                            A walking tour from 6:30pm to 9pm where you will wonder around the streats and avenues of Kigali and experience its nighttime magic.
+                        </p>
+                        <a href="/#get-in-touch">
+                            <button class="btn cta">Book a tour with us</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="container">
+            <h1 class="heading">Book your tour Now</h1>
+            <p class="call-to-action-text">
+                Do you want to hear about the history of Nyamirambo( which means cemetery), the most vibrant place of kigali? 
+                By booking one of our Tours you are set to explore Kigali at its best ,as you connect, engage and Learn from the community.
+            </p>
+            <a href="">
+                <button class="btn cta">
+                    Book a tour with us
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="get-in-touch">
+        <div class="container">
+            <div class="col-left">
+                <h1 class="heading">Book your Experince</h1>
+                <p>
+                    The only way to See and feel real Kigali and its most vibrant Neighborhood Nyamirambo with experienced Guides.
+                    All tours are available in English and French.
+                </p>
+                <div class="contact-address">
+                    <h4>Contact Address</h4>
+                    <ul>
+                        <li> <a href="mailto:kjsexperiences@gmail.com"><i class="fa fa-envelope-o"></i> kjsexperiences@gmail.com</a> </li>
+                        <li><a href="tel:+250781218125"><i class="fa fa-phone icon"></i> +250 781 218 125</a></li>
+                        <li><a href="https://wa.me/250788375418"><i class="fab fa-whatsapp"></i> +250 788 375 418</a></li>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> KN 2AV,268 Street</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-right">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="form-input half">
+                            {{form.first_name}}
+                            {{form.last_name}}                    
+                            {{form.address}}                    
+                            {{form.phone_number}}                   
+                            {{form.date_time}}
+                            {{form.email}}
+                    </div>
+                    <div class="form-input full" style="margin-top: 20px;">      
+                            {{form.notes}}
+                    </div>
+                    <div class="form-input half">
+                            <input class="form-control submit-btn" type="submit" value="Send message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h1>KJS Experiences</h1>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">welcome</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Tours</a></li>
+                    <li><a href="">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/kjsexperiencesltd/"><i class="fab fa-instagram"></i></a>
+                <a href="http://m.facebook.com/profile.php?id=100064153118467"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static '/js/navigation.js' %}"></script>
+    <script src="{% static '/js/main.js' %}"></script>
+  </body>
+</html>

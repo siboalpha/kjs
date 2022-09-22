@@ -1,0 +1,388 @@
+$content-width: 1200px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$dark-green: #02231c;
+$nav-font-color: white;
+$green: #5CBA82;
+$border-radius: 10px;
+$white-color: #fff;
+$body-color: rgb(81, 81, 81);
+$off-white-color: whitesmoke;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 0.2s;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color:$body-color;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+//UTILITY CLASSES
+.container {
+    margin: auto;
+    max-width: $content-width;
+    padding: 80px 0;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: $dark-green; 
+    margin: 10px 0 30px 0;
+}
+
+.sub-heading {
+    color: $green;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: $green;
+    color: $white-color;
+    border-radius: $border-radius;
+    font-size: medium;
+
+    &:hover {
+        background-color: $dark-green;
+        color: $white-color;
+    }
+}
+
+//Hero Section
+
+.hero {
+    background: url('/static/img/Worlds-Greatest-Places-2022-KigaliRwanda.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #02231cbc;
+    background-blend-mode: overlay;
+    //height: 100vh;
+    position: relative;
+    color: $white-color;
+    
+    &::after {
+        content: url('/static/img/white-divider.svg');
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        transform: rotate(180deg);
+    }
+
+    .container {
+        padding-top: 30vh;
+
+        .intro {
+            max-width: 40%;
+            .heading {
+                color: $white-color;
+                margin-bottom: 20px;
+            }
+        }
+
+        .tours-cards {
+            margin: 50px 0 70px 0;
+            display: grid;
+            grid-template-columns:  18% 18% 18% 18% 18%;
+            gap: 2.5%;
+            
+            a {
+                .tour-card {
+                    background-color:#02231cba;
+                    padding: 60px 0;
+                    text-align: center;
+                    border-radius: $border-radius;
+    
+                    p {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        color: $white-color;
+                    }
+                }
+            }
+        
+        }
+    }
+
+}
+
+.about {
+    .container {
+        display: flex;
+        padding: 20px 0;
+        .col-left {
+            width: 50%;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        .col-right {
+            width: 50%;
+            text-align: end;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.tours {
+    position: relative;
+    background-color: $off-white-color;
+    &::before {
+        content: url('/static/img/white-divider.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 180px;
+        .top-center-text {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+
+            h1 {
+                font-size:32px;
+            }
+        }
+
+        .tours-grids {
+            margin-top: 50px;
+            .tour-grid {
+                display: flex;
+                margin: 50px 0;
+                align-items: center;
+                .col-left {
+                    width: 50%;
+                    img {
+                        width: 80%;
+                        height: 350px;
+                        object-fit: cover;
+                        border-radius: 66px;
+                        filter: drop-shadow(2px 12px 17px #7aa77a82);
+                    }
+                }
+
+                .col-right {
+                    width: 50%;
+                    .heading {
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                    }
+                    .price {
+                        background: $green;
+                        display: inline-block;
+                        padding: 5px 15px;
+                        border-radius: $border-radius;
+                        color: $dark-green;
+                    }
+
+                    .tour-desc {
+                        margin: 20px 0;
+                    }
+                }
+            }
+
+            .reverse {
+                flex-direction: row-reverse;
+                .col-left {
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+.call-to-action {
+    background: url('/static/img/Worlds-Greatest-Places-2022-KigaliRwanda.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #02231cb7;
+    background-blend-mode: overlay;
+    position: relative;
+    color: $white-color;
+
+    &::after {
+        content: url("/static/img/top-grey-divider.svg");
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+    }
+    .container {
+        max-width: 600px;
+        padding-top: 150px;
+        text-align: center;
+        .heading {
+            color: $white-color;
+        }
+        .call-to-action-text {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.contact {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .col-left {
+            width: 40%;
+
+            .contact-address {
+                margin-top: 30px;
+                h4 {
+                    color: $dark-green;
+                }
+
+                ul {
+                    margin-top: 10px;
+
+                    li {
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 10px;
+                        a {
+                            color: $body-color;
+                            display: flex;
+                            gap: 10px;
+                            i {
+                                background-color: $dark-green;
+                                color:$white-color;
+                                height: 34px;
+                                width: 34px;
+                                border-radius: $border-radius;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                        &:hover {
+                            a {
+                                color: $green;
+                                i {
+                                    background-color: $green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-right {
+            width: 40%;
+            text-align: end;
+
+            form {
+                .form-input {
+                    .submit-btn {
+                        padding: 15px 30px;
+                        border: none;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        background-color: $green;
+                        color: $dark-green;
+                        border-radius: $border-radius;
+                        font-size: medium;
+                        margin-top: 10px;
+                    }
+                    .form-control {
+                        width: 100%;
+                        padding: 12px;
+                        margin-bottom: 10px;
+                    }
+                    input textarea {
+                        border-radius: $border-radius;
+                        outline: none;
+                        border: 1px solid $body-color;
+                        &::placeholder {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .full {
+                    display: grid;
+                }
+
+                .half {
+                    display: grid;
+                    grid-template-columns: 48% 48%;
+                    gap: 4%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: $dark-green;
+    color: $white-color;
+    .container {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-menu {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                gap: 10px;
+
+                li {
+                    a {
+                        color: $white-color;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            gap: 10px;
+            a{
+                color: $white-color;
+            }
+        }
+    }
+}
