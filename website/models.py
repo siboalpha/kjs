@@ -11,4 +11,4 @@ class ContactMessage(models.Model):
     notes = models.TextField(max_length=500, null=True)
 
     def __str__(self):
-        return self.full_name
+        return self.first_name
