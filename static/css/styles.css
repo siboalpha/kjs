@@ -333,4 +333,22 @@ footer .container .social-media {
 }
 footer .container .social-media a {
   color: #fff;
+}
+
+.thank-you {
+  text-align: center;
+  height: 100vh;
+  padding-top: 30vh;
+  background: url("/static/img/Worlds-Greatest-Places-2022-KigaliRwanda.jpg");
+  background-color: rgba(2, 35, 28, 0.768627451);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.thank-you .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40%;
 }/*# sourceMappingURL=styles.css.map */

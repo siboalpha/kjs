@@ -109,6 +109,9 @@
     flex-direction: column;
     gap: 20px;
   }
+  .thank-you .container {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1240px) {
   .container {

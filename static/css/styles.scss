@@ -386,3 +386,22 @@ footer {
         }
     }
 }
+
+.thank-you {
+    text-align: center;
+    height: 100vh;
+    padding-top: 30vh;
+    background: url("/static/img/Worlds-Greatest-Places-2022-KigaliRwanda.jpg");
+    background-color: #02231cc4;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 40%;
+    }
+}
