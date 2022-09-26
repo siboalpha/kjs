@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'kjsexperience.com', 'www.kjsexperience.com', 'siboapps.com', 'www.siboapps.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'kjsexperiences.com', 'www.kjsexperiences.com']
 
 
 # Application definition
