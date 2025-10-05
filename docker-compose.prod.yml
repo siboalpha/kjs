@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env.docker
+    environment:
+      - DEBUG=False
+    volumes:
+      - staticfiles:/app/staticfiles
+      - ./db.sqlite3:/app/db.sqlite3
+    restart: unless-stopped
+
+volumes:
+  staticfiles:
