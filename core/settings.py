@@ -24,8 +24,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "0.0.0.0",
-    "kjsexperiences.com",
-    "www.kjsexperiences.com",
+    "kjs.pixelsprint.tech",
 ]
 
 
